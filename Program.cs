@@ -18,8 +18,15 @@ class Program
 
         foreach(var perso in Personnages)
         {
-            perso.Afficher();
-            perso.Attaquer();
+            if (perso is Guerrier g)
+            {
+                g.Attaquer();
+                perso.Afficher();
+            } else if (perso is Magicien magicien)
+            {
+                magicien.LancerSort();
+                perso.Afficher();
+            }
         }
     }
 }

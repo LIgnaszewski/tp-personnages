@@ -6,7 +6,7 @@ class Program
     {
         Personnage p1 = new Personnage("Lucas", 25);
         p1.Afficher();
-        p1.recevoirDegats(24);
+        p1.RecevoirDegats(24);
 
         Guerrier p2 = new Guerrier("Arthur", 100, 20);
         p2.Afficher();

@@ -9,7 +9,7 @@ class Personnage
         this.pointsDeVie = pointsDeVie;
     }
 
-    public void recevoirDegats(int degats)
+    public void RecevoirDegats(int degats)
     {
         pointsDeVie -= degats;
     }
@@ -17,5 +17,10 @@ class Personnage
     public virtual void Afficher()
     {
         Console.WriteLine($"{name} : {pointsDeVie}PV");
+    }
+
+    public void RecevoirDegats(int degats, int reduction)
+    {
+        pointsDeVie -= degats - reduction;
     }
 }

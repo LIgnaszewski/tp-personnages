@@ -13,4 +13,9 @@ class Guerrier: Personnage
     {
         Console.WriteLine($"{name} : {pointsDeVie}PV/{armure}ARM");
     }
+
+    public void Attaquer()
+    {
+        Console.WriteLine("Le guerrier attaque");
+    }
 }

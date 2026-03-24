@@ -8,9 +8,9 @@ class Program
         p1.Afficher();
         p1.recevoirDegats(24);
 
-        Guerrier p2 = new Guerrier("Romain", 1500, 50);
+        Guerrier p2 = new Guerrier("Arthur", 100, 20);
         p2.Afficher();
-        Magicien p3 = new Magicien("Antoine", 2000, 200);
+        Magicien p3 = new Magicien("Merlin", 80, 50);
         p3.Afficher();
     }
 }

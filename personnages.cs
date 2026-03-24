@@ -14,7 +14,7 @@ class Personnage
         pointsDeVie -= degats;
     }
 
-    public void Afficher()
+    public virtual void Afficher()
     {
         Console.WriteLine($"{name} : {pointsDeVie}PV");
     }

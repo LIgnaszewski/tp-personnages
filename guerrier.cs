@@ -9,7 +9,7 @@ class Guerrier: Personnage
         this.armure = armure;
     }
 
-    public void Afficher()
+    public override void Afficher()
     {
         Console.WriteLine($"{name} : {pointsDeVie}PV/{armure}ARM");
     }

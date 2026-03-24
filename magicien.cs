@@ -9,7 +9,7 @@ class Magicien : Personnage
         this.puissanceMagique = puissanceMagique;
     }
 
-    public void Afficher()
+    public override void Afficher()
     {
         Console.WriteLine($"{name} : {pointsDeVie}PV/{puissanceMagique}PM");
     }

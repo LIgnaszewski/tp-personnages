@@ -8,9 +8,17 @@ class Program
         p1.Afficher();
         p1.RecevoirDegats(24);
 
-        Guerrier p2 = new Guerrier("Arthur", 100, 20);
-        p2.Afficher();
-        Magicien p3 = new Magicien("Merlin", 80, 50);
-        p3.Afficher();
+        Personnage p2 = new Guerrier("Arthur", 100, 20);
+        Personnage p3 = new Magicien("Merlin", 80, 50);
+
+        List<Personnage> Personnages = new List<Personnage>();
+
+        Personnages.Add(p2); 
+        Personnages.Add(p3); 
+
+        foreach(var perso in Personnages)
+        {
+            perso.Afficher();
+        }
     }
 }

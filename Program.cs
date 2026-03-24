@@ -10,11 +10,13 @@ class Program
 
         Personnage p2 = new Guerrier("Arthur", 100, 20);
         Personnage p3 = new Magicien("Merlin", 80, 50);
+        Personnage p4 = new Archer("PEDRAK", 200, 20);
 
         List<Personnage> Personnages = new List<Personnage>();
 
         Personnages.Add(p2); 
         Personnages.Add(p3); 
+        Personnages.Add(p4);
 
         foreach(var perso in Personnages)
         {
@@ -25,6 +27,9 @@ class Program
             } else if (perso is Magicien magicien)
             {
                 magicien.LancerSort();
+                perso.Afficher();
+            } else
+            {
                 perso.Afficher();
             }
         }

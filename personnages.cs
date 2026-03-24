@@ -23,4 +23,8 @@ class Personnage
     {
         pointsDeVie -= degats - reduction;
     }
+    public void ToString()
+    {
+     Console.WriteLine($"{name} : {pointsDeVie}PV");
+    }
 }

@@ -19,6 +19,7 @@ class Program
         foreach(var perso in Personnages)
         {
             perso.Afficher();
+            perso.Attaquer();
         }
     }
 }
